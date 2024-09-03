@@ -5,3 +5,7 @@
 @use "positions";
 @use "widths";
 
+header{
+    height: heights.$height-10;
+    width: widths.$width-1;
+}

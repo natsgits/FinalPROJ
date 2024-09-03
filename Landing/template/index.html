@@ -7,21 +7,28 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="../scripts/index.js" defer></script>
     <div class="parent-container">
         <header></header>
         <section>
-            <p>Welcome to Project 2311</p>
+            <p class="welcome">Welcome to Project 2311</p>
         <div class="form-container">
-            <form action="/" method="get" name = "signinForm">
+            <form action="/" method="get" name = "signinForm" id="signform">
                 <div class="Fields">
                     <label for="username"  name = UserName>Username<sup>*</sup></label>
-                    <input type="text" name="UserName" id="username">
+                    <input type="text" name="UserName" id="username" placeholder="Enter username">
+                    <br>
+                    <div class="errname" id = "errn"></div>
                 </div>
                 <div class="Fields">
                     <label for="password" name = Password>Password<sup>*</sup></label>
-                    <input type="password" name="Password" id="password">
+                    <input type="password" name="Password" id="password" placeholder="Enter password">
+                    <br>
+                    <div class="errpass" id = "errp"></div>
                 </div>
-                <button type="submit">Sign-in</button>
+                <span><sup>*</sup><span>Fields are mandatory</span></span>
+                <br>
+                <button type="submit" id ="subsignform">Sign-in</button>
             </form>
         </div>
         </section>

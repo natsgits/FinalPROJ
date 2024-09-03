@@ -4,3 +4,81 @@
 @use "heights";
 @use "positions";
 @use "widths";
+
+section{
+    height: heights.$height-2;
+    width: widths.$width-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    .welcome{
+        font-size: 2rem; 
+        color: colors.$font-color-a2;
+    }
+    .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 20rem;
+        width: 28rem;
+        background-color: colors.$bcg-color-b2;
+        box-shadow: 0.2rem 0.2rem 0.2rem colors.$bcg-primary-color-b;
+        border-radius: 1rem;
+        padding-top: 2rem;
+        form{
+            width: widths.$width-1;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            .Fields{
+                display: flex;
+                justify-content: left;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            label{
+                margin-bottom: 0.4rem;
+            }
+            input{
+                width: 20rem;
+                height: 2rem;
+                border-radius: 0.4rem;
+                padding-left: 0.4rem;
+                border: none;
+                input:focus{
+                    outline-color: colors.$bcg-primary-color-b;
+                }
+            }
+            span{
+                align-self: last baseline;
+                color: colors.$font-color-a2;
+            }
+            .errname{
+                font-size: 0.8rem;
+                color: colors.$font-color-a2;
+                align-self: last baseline;
+            }
+            .errpass{
+                font-size: 0.8rem;
+                color: colors.$font-color-a2;
+                align-self: last baseline;
+            }
+            button{
+                height: 2.4rem;
+                width: 5.8rem;
+                border-radius: 0.4rem;
+                background-color: colors.$bcg-color-b1;
+                color: colors.$font-color-a4;
+            }
+            button:active{
+                background-color: colors.$bcg-color-b3;
+                color: colors.$font-color-a1
+            }
+            
+        }
+    }
+}

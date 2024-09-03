@@ -4,3 +4,12 @@
 @use "heights";
 @use "positions";
 @use "widths";
+
+footer{
+    height: heights.$height-10;
+    width: widths.$width-1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}

@@ -1,4 +1,9 @@
-@use "header";
-@use "section";
-@use "footer";
+@import "containers";
+@import "header";
+@import "section";
+@import "footer";
 
+
+:root{
+    font-size: 16px;
+}
